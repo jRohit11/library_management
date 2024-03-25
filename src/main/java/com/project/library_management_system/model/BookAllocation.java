@@ -27,6 +27,7 @@ public class BookAllocation {
     @JsonBackReference
     @ManyToOne(optional = false)
     private Librarian issuedBy;
+
     @JoinColumn(updatable = false, nullable = false, columnDefinition = "VARCHAR(36)", name = "book_id")
     @ManyToOne(optional = false)
     @JsonBackReference
