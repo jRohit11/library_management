@@ -2,6 +2,7 @@ package com.project.library_management_system.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.Type;
@@ -10,6 +11,7 @@ import java.util.UUID;
 
 @Getter
 @Setter
+@Builder
 @Entity
 public class BookAllocation {
 
